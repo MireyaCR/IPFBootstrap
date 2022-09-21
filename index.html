@@ -19,25 +19,24 @@
     <div class="row-fluid">
       <nav class="navbar navbar-light bg-light">
         <div class="navbar-brand">
-          <i class="fa-brands fa-instagram mx-2"></i> Instagram
+          <i class="fa-brands fa-instagram mx-1"></i> Instagram
         </div>
 
         <span class="navbar-text">
           <div class="row">
-            <button type="button" class="btn bg-success text-white" data-toggle="modal"
-              data-target="#exampleModal">Create
-              a
-              new Post</button>
+            <button type="button" class="btn bg-success text-white mt-2" data-toggle="modal"
+              data-target="#exampleModal">Create a new Post</button>
             <div class="dropdown mx-4">
-              
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+              <button class="btn btn-secondary dropdown-toggle mt-2" type="button" id="dropdownMenuButton"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fa-solid fa-gear"></i>
               </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Profile</a>
+                <a class="dropdown-item" href="#">Accesibility</a>
+                <a class="dropdown-item" href="#">Privacy and Data</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-danger" href="#">Log out</a>
               </div>
             </div>
           </div>
@@ -82,20 +81,53 @@
         </div>
       </div>
       <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-        <div class="container justify-content-center">
-          <div class="row">
-            <div class="col-6 ">My Crazy dog Spark!</div>
-            <div class="col-6 md-6">08/26</div>
-            <div class="w-100"></div>
-            <div class="col "><img src="https://cdn.pixabay.com/photo/2017/09/25/13/12/cocker-spaniel-2785074__340.jpg">
-            </div>
-            <div class="w-100"></div>
-            <div class="col ">
-              <p><strong>204 Likes</strong><br>This is an example of a very good photo that you can post on instagram
+        <div class="container justify-content-center mt-2">
+          <div class="row justify-content-center m-0 border">
+            <div class="col-9 text-left">My Crazy dog Spark!</div>
+            <div class="col-3 text-right">08/26</div>
+          </div>
+          <div class="row justify-content-center">
+            <img class="col-12" src="https://cdn.pixabay.com/photo/2017/09/25/13/12/cocker-spaniel-2785074__340.jpg">
+          </div>
+          <div class="row justify-content-center border m-0">
+            <div class="col-12">
+              <p><small><strong>204 Likes</strong><br>This is an example of a very good photo that you can post on instagram</small>
               </p>
             </div>
           </div>
         </div>
+        <div class="container justify-content-center mt-2">
+          <div class="row justify-content-center m-0 border">
+            <div class="col-9 text-left">The greatness of Croatia</div>
+            <div class="col-3 text-right">04/09</div>
+          </div>
+          <div class="row justify-content-center">
+            <img class="col-12" src="https://cdn.pixabay.com/photo/2014/11/01/18/46/dubrovnik-512798__340.jpg">
+          </div>
+          <div class="row justify-content-center border m-0">
+            <div class="col-12">
+              <p><small><strong>204 Likes</strong><br>This is an example of a very good photo that you can post on instagram</small>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container justify-content-center mt-2">
+          <div class="row justify-content-center m-0 border">
+            <div class="col-9 text-left">Amazing Goal by Cristiano!</div>
+            <div class="col-3 text-right">06/10</div>
+          </div>
+          <div class="row justify-content-center">
+            <img class="col-12" src="https://cdn.pixabay.com/photo/2020/04/19/20/57/soccer-5065614__340.jpg">
+          </div>
+          <div class="row justify-content-center border m-0">
+            <div class="col-12">
+              <p><small><strong>204 Likes</strong><br>This is an example of a very good photo that you can post on instagram</small>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </div>
   </div>
@@ -104,17 +136,33 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          ...
+          <form action="">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Caption</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                placeholder="Add the caption of your post here"></textarea>
+              <div class="row">
+                <button class="btn btn-light m-2">
+                  <i class="fa-solid fa-camera"></i>
+                </button>
+                <button class="btn btn-light m-2">
+                  <i class="fa-solid fa-location-dot"></i>
+                </button>
+
+
+              </div>
+            </div>
+          </form>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Publish</button>
+          <button type="button" class="btn bg-success text-white">Publish</button>
         </div>
       </div>
     </div>
